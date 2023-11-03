@@ -1,8 +1,7 @@
-import React from 'react'
-import { blogImg1 } from '../assets'
-import StarRating from './StarRating'
+import StarRating from './StarRating';
+import PropTypes from 'prop-types';
 
-const Card = ({course}) => {
+export const Card = ({course}) => {
   return (
     <div className='z-10 bg-white drop-shadow-md overflow-hidden rounded-2xl mr-2  my-4'>
         <img src={course.linkImg} 
@@ -21,5 +20,6 @@ const Card = ({course}) => {
     </div>
   )
 }
-
-export default Card
+Card.prototype = {
+  course: PropTypes.any,
+}

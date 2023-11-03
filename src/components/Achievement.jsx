@@ -1,4 +1,3 @@
-import React from 'react'
 import { achievement } from '../assets'
 import {SlGraduation} from 'react-icons/sl'
 import {FiVideo} from 'react-icons/fi'

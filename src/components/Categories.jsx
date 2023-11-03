@@ -1,4 +1,3 @@
-import React from 'react'
 import CategoryCard from './CategoryCard'
 import {BsVectorPen} from 'react-icons/bs'
 import {TiHtml5} from 'react-icons/ti'
