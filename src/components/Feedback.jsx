@@ -54,15 +54,9 @@ const Feedback = () => {
             </div>
             
             <Slider {...settings} >
-            
                 <FeedbackCard />
                 <FeedbackCard />
                 <FeedbackCard />
-
-
-
-              
-
             </Slider>
             
         </div>
