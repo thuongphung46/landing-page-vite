@@ -1,47 +1,83 @@
-import React from 'react';
-import { heroImg } from '../assets';
-import  {AiOutlineSearch} from 'react-icons/ai'
+import React from "react";
+import { motion } from "framer-motion";
+import { createCardVariants } from "../constants/function";
+import useWindowDimensions from "../hook/useGetWith";
+import {Color} from "../constants/color";
+import FooterHeader from "../atoms/footerHeader"
+const calculateFontSize = (width, height) => {
+  const baseFontSize = 16;
+  const minWidth = 500;
+  const minHeight = 500;
+  const fontSizeMultiplier = Math.min(width / minWidth, height / minHeight);
+  const calculatedFontSize = baseFontSize * fontSizeMultiplier;
+  return calculatedFontSize;
+};
 
 const Hero = () => {
+  const { height, width } = useWindowDimensions();
+  const fontSize = calculateFontSize(width, height);
+
+  const isSmallScreen = width < 580;
+
   return (
-    <div className='w-full bg-white py-24'>
-        <div className='md:max-w-[1480px] m-auto grid md:grid-cols-2 max-w-[600px]  px-4 md:px-0'>
-            
-            <div className='flex flex-col justify-start gap-4'>
-                <p className='py-2 text-2xl text-[#20B486] font-medium'>START TO SUCCESS</p>
-                <h1 className='md:leading-[72px] py-2 md:text-6xl text-5xl font-semibold'>Access To <span className='text-[#20B486]'>5000+</span> Courses
-                    from <span  className='text-[#20B486]'>300</span> Instructors 
-                    & Institutions
-                </h1>
-                <p className='py-2 text-lg text-gray-600'>Various versions have evolved over the years, sometimes by accident.</p>
-                
-                <form className='bg-white border max-w-[500px] p-4 input-box-shadow rounded-md flex justify-between'>
-                    <input 
-                        className='bg-white'
-                        type="text"
-                        placeholder='What do want to learn?'
-                    />
-                    <button>
-                        <AiOutlineSearch 
-                            size={20}
-                            className="icon"
-                            style={{color:'#000'}}
-
-                        />
-
-                    </button>
-                </form>
-            </div>
-            
-            <img  src={heroImg} className="md:order-last  order-first" />
-
-
-
+    <motion.div
+      id="hero"
+      initial="offscreen"
+      whileInView="onscreen"
+      className="w-full  pt-24 justify-around bg-gradient-[#053381, #42aed3] bg-gradient-to-t from-cyan-500 to-blue-500"
+    >
+      <div className={`md:max-w-[1480px] m-auto  grid md:grid-cols-2 items-center max-w-[600px]  ${isSmallScreen ? 'text-center' : 'px-8'}`}>
+        <div className="flex flex-col justify-start  gap-4">
+          <motion.div
+            variants={createCardVariants(50, 0)}
+            className={` text-[#fff] flex  font-bold ${isSmallScreen ? 'text-xl justify-center' : 'text-4xl'}`}
+          >
+            <p className="mr-[4px] text-[#03fff8] ">HITO </p>SỰ LỰA CHỌN
+          </motion.div>
+          <motion.p
+            variants={createCardVariants(-100, 0)}
+            className={` text-[#fff] font-bold ${isSmallScreen ? 'text-xl' : 'text-4xl'}`}
+          >
+            HÀNG ĐẦU
+          </motion.p>
+          <motion.p
+            variants={createCardVariants(150, 0)}
+            className={` text-[#fff] font-bold ${isSmallScreen ? 'text-xl' : 'text-4xl'}`}
+          >
+            CHO NGƯỜI THẤP LÙN
+          </motion.p>
+          <motion.div
+            variants={createCardVariants(-200, 0)}
+            className={`bold  text-[#fff] font-bold ${isSmallScreen ? 'text-[10px]' : 'text-xl'}`}
+          >
+            Chúng tôi tự hào là một trong những đơn vị tiên phong
+          </motion.div>
+          <motion.div
+            variants={createCardVariants(250, 0)}
+            className={`bold  text-[#fff] font-bold ${isSmallScreen ? 'text-[10px]' : 'text-xl'}`}
+          >
+            trong sứ mệnh nâng tầm vóc dáng người việt
+          </motion.div>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            variants={createCardVariants(0, 50)}
+            className={`border-white border max-w-[200px] h-[48px] font-bold text-[#fff] ${isSmallScreen ? '' : ''}`}
+          >
+            Buy Now
+          </motion.button>
         </div>
-        
+        <div className="w-full text-center justify-center order-first md:order-last flex"> <motion.img
+          variants={createCardVariants(0, 20)}
+          src={
+            "https://w.ladicdn.com/s650x650/5e476fd054f5fa0a4cfbc867/comsd-20230330114528-y9jz0.png"
+          }
+          className={`  ${isSmallScreen ? 'max-h-[200px] ' : ''} `}
+        /></div>
+      </div>
+    <FooterHeader/>
+    </motion.div>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Hero
+export default Hero;

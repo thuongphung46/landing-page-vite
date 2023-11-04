@@ -4,10 +4,11 @@ import Slider from "react-slick";
 import { courses } from '../data/Courses';
 import FeedbackCard from './FeedbackCard';
 
+
 const Feedback = () => {
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,

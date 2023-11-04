@@ -1,20 +1,38 @@
-import { Hero, Navbar,Companies, Courses, Achievement, Categories, Feedback, CTA, Footer } from './components';
-import './App.css'
+import {
+  Hero,
+  Navbar,
+  Companies,
+  Courses,
+  Achievement,
+  Categories,
+  Feedback,
+  CTA,
+  Footer,
+  SliderInForTeam,
+} from "./components";
+import "./App.css";
+
+//  {/* <>Categori</> */}  //       {/* <Categories /> */}  
+// {/* <>Compani</>// <Companies /> */}
+      
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Hero />
-      <Companies/>
       <Courses />
+      <>Achievement</>
       <Achievement />
-      <Categories />
-      <Feedback />
+      <SliderInForTeam/>
+      <>CTA</>
       <CTA />
+      <>Feedback</>
+      <Feedback />
+
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

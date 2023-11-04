@@ -5,7 +5,7 @@ import {SlPeople} from 'react-icons/sl'
 
 const Achievement = () => {
   return (
-    <div className='w-full bg-white py-24'>
+    <div id='achievement' className='w-full bg-white py-24'>
         <div className='md:max-w-[1480px] m-auto grid md:grid-cols-2 max-w-[600px]  px-4 md:px-0'>
             
             <div className='flex flex-col justify-center '>
@@ -70,7 +70,8 @@ const Achievement = () => {
            </div>
             
              
-             <img  src={achievement} className="m-auto md:order-last  order-first" />
+             {/* <img  src={achievement} className="m-auto md:order-last  order-first" /> */}
+             <video className='m-auto md:order-last  order-first' src='blob:https://www.youtube.com/5ba1dbdc-2437-4b9a-aabc-99092b377377'></video>
 
 
 
