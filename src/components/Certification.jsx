@@ -29,8 +29,8 @@ const Certification = () => {
           </div>
           <div className="sm flex flex-col justify-center bg-cover max-w-[400px] rounded">
             <img
-             className="bg-cover"
               style={{
+                height: "100%",
                 animationName: "bounceInUp",
                 animationDelay: "0.7s",
                 animationDuration: "1.2s",
