@@ -1,36 +1,11 @@
-import {
-  Hero,
-  Navbar,
-  Companies,
-  Courses,
-  Achievement,
-  Categories,
-  Feedback,
-  CTA,
-  Footer,
-  SliderInForTeam,
-} from "./components";
 import "./App.css";
-
-//  {/* <>Categori</> */}  //       {/* <Categories /> */}  
-// {/* <>Compani</>// <Companies /> */}
-      
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Courses />
-      <>Achievement</>
-      <Achievement />
-      <SliderInForTeam/>
-      <>CTA</>
-      <CTA />
-      <>Feedback</>
-      <Feedback />
-
-      <Footer />
+      <RouterProvider router={router} />
     </div>
   );
 };
