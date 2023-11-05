@@ -38,12 +38,17 @@ const NavbarMenu = () => {
                 return (
                   <motion.div
                     key={index}
+                    style={{
+                      animationName: "bounceInUp",
+                      animationDelay: "0.7s",
+                      animationDuration: index *0.4 + "s",
+                    }}
                     initial="offscreen"
                     whileInView="onscreen">
                     <motion.div
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
-                      variants={createCardVariants(0, index * 6)}
+                      // variants={createCardVariants(0, index * 6)}
                       className="hover:text-[#fff] cursor-pointer whitespace-nowrap font-bold text-white ">
                       <Link
                         activeClass={active}
@@ -69,7 +74,12 @@ const NavbarMenu = () => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              variants={createCardVariants(0, 12)}
+              // variants={createCardVariants(0, 12)}
+              style={{
+                animationName: "bounceInUp",
+                animationDelay: "0.7s",
+                animationDuration: "1.2s",
+              }}
               className="flex justify-between items-center bg-transparent px-6 gap-2 text-white">
               <AiFillPhone className="text-white " />
               Liên hệ ngay

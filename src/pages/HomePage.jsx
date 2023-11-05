@@ -5,9 +5,10 @@ import {
   Courses,
   Achievement,
   Feedback,
-  CTA,
+  Evaluate,
   Footer,
   SliderInForTeam,
+  Certification
 } from "../components";
 import "../App.css";
 
@@ -19,7 +20,8 @@ export const PageHome = () => {
       <Achievement />
       <SliderInForTeam />
       {/* <>CTA</> */}
-      <CTA />
+      <Evaluate />
+      <Certification/>
       {/* <>Feedback</> */}
       <Feedback />
       <Footer />
