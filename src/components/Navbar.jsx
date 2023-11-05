@@ -1,26 +1,12 @@
 import React, { useState } from "react";
-import { lock, hamburgerMenu, close } from "../assets";
 import { motion } from "framer-motion";
 import { AiFillPhone } from "react-icons/ai";
 import { Link } from "react-scroll";
 import { HiMenu } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { createCardVariants } from "../constants/function";
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  Button,
-  IconButton,
-  Card,
-} from "@material-tailwind/react";
-import {
-  list_button,
-  variant_nav,
-  variants,
-  cardVariantsMore,
-  cardVariants,
-} from "../constants/Navbar";
+import { Navbar } from "@material-tailwind/react";
+import { list_button } from "../constants/Navbar";
 
 const NavbarMenu = () => {
   const [toggle, setToggle] = useState(false);
@@ -32,15 +18,13 @@ const NavbarMenu = () => {
   };
   return (
     <>
-      <Navbar
-        //   className="  top-0 left-0 w-full  border-b z-10 bg-[#0176b7] shadow-md"
-        className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-[#0176b7] shadow-md">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-[#0176b7] shadow-md">
         <div className="md:max-w-screen-xl max-w-screen-sm mx-auto w-full h-[80px] flex justify-between items-center md:px-0 px-4">
           <img
             src={
               "https://w.ladicdn.com/5ea10d9ec9b9d03ddf95197a/logo-20231018151836-fheo0.svg"
             }
-            className="h-12   "
+            className="h-12"
             alt="Logo"
           />
 

@@ -1,12 +1,12 @@
 import React from "react";
-import { cardVariantsMore } from "../constants/Navbar";
+import {createCardVariants} from "../constants/function";
 import { motion } from "framer-motion";
 
 export const CardInfor = ({ name, image, introduce }) => {
   return (
     <motion.div initial="offscreen" whileInView="onscreen">
       <motion.div
-        variants={cardVariantsMore}
+        variants={createCardVariants(0, 5)}
         className="ml-4 mr-4 max-w-sm bg-[#f4f4f4] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 "
       >
         <motion.div className="w-full justify-center  flex p-5">
