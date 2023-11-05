@@ -1,20 +1,13 @@
-import { Hero, Navbar,Companies, Courses, Achievement, Categories, Feedback, CTA, Footer } from './components';
-import './App.css'
+import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Companies/>
-      <Courses />
-      <Achievement />
-      <Categories />
-      <Feedback />
-      <CTA />
-      <Footer />
+      <RouterProvider router={router} />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
