@@ -1,6 +1,9 @@
 import VideoPlayIntroduce from "../assets/videoplayback.mp4";
+import ReactPlayer from "react-player/youtube";
+import UseGetWith from "../hook/useGetWith";
 
 const Achievement = () => {
+  const { height, width } = UseGetWith();
   return (
     <div id="achievement" className="w-full bg-white py-24">
       <div className="md:max-w-[1480px] m-auto grid md:grid-cols-2 max-w-[600px]  px-4 md:px-0">
@@ -24,13 +27,22 @@ const Achievement = () => {
           </p>
         </div>
 
-        <video
-          className="m-auto md:order-last  order-first rounded drop-shadow-xl"
-          autoPlay
-          loop
-          muted
-          src={VideoPlayIntroduce}
-        />
+        <div
+        className="m-auto md:order-last  order-first rounded drop-shadow-xl"
+          style={{
+            overflow: "auto",
+          }}
+        >
+          <ReactPlayer
+            width={width < 1024 ? `100%` : "580px"}
+            loop
+            muted
+            playing
+            url={
+              "https://www.youtube.com/embed/MgCBn_hdjGg?rel=0&modestbranding=0&playsinline=1&controls=1&enablejsapi=1&origin=http%3A%2F%2Fwww.hitocenter.com&widgetid=2"
+            }
+          ></ReactPlayer>
+        </div>
       </div>
     </div>
   );
