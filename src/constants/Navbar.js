@@ -13,7 +13,7 @@ export const list_button =[
     },
     {
         title:"Đánh giá",
-        link:"achievement",
+        link:"Evaluate",
     },
     {
         title:"Chuyên gia",

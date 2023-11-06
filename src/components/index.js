@@ -5,10 +5,11 @@ import Courses from "./Courses";
 import Achievement from "./Achievement";
 import Categories from "./Categories";
 import Feedback from "./Feedback";
-import CTA from "./CTA";
+import Evaluate from "./Evaluate";
 import Footer from "./Footer";
 import SliderInForTeam from "./SliderIntroduce"
+import Certification from "./Certification";
 
 
 
-export {Navbar,Hero, Companies,Courses,Achievement,Categories,Feedback,CTA,Footer , SliderInForTeam}
+export {Navbar,Hero, Companies,Courses,Achievement,Categories,Feedback,Evaluate,Footer , SliderInForTeam, Certification}

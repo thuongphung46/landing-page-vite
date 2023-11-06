@@ -1,13 +1,12 @@
 import {
   Hero,
-  Navbar,
-  Companies,
   Courses,
   Achievement,
   Feedback,
-  CTA,
+  Evaluate,
   Footer,
   SliderInForTeam,
+  Certification,
 } from "../components";
 import "../App.css";
 
@@ -17,10 +16,9 @@ export const PageHome = () => {
       <Hero />
       <Courses />
       <Achievement />
+      <Evaluate />
       <SliderInForTeam />
-      {/* <>CTA</> */}
-      <CTA />
-      {/* <>Feedback</> */}
+      <Certification />
       <Feedback />
       <Footer />
     </div>
