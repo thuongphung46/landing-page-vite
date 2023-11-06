@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 const Achievement = () => {
   const { height, width } = UseGetWith();
+  const SizeWidth = width < 600;
   return (
     <div id="achievement" className="w-full bg-white py-24">
       <div className="md:max-w-[1480px] m-auto grid md:grid-cols-2 max-w-[600px]  px-4 md:px-0">
@@ -13,9 +14,11 @@ const Achievement = () => {
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "linear", delay: 0.2 }}
-            className="py-4 md:leading-[72px] text-3xl font-bold"
+            className={`py-4 md:leading-[72px]  font-bold ${
+              SizeWidth ? `text-xl` : `text-3xl`
+            }`}
           >
-            <span className="text-[#20B486]">GIỚI THIỆU VỀ HITO CANXI</span>
+            <span className={`text-[#20B486]`}>GIỚI THIỆU VỀ HITO CANXI</span>
           </motion.h1>
           <motion.p
             initial={{ x: -50, opacity: 0 }}

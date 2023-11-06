@@ -6,7 +6,7 @@ import {
   Evaluate,
   Footer,
   SliderInForTeam,
-  Certification
+  Certification,
 } from "../components";
 import "../App.css";
 
@@ -16,9 +16,9 @@ export const PageHome = () => {
       <Hero />
       <Courses />
       <Achievement />
-      <SliderInForTeam />
       <Evaluate />
-      <Certification/>
+      <SliderInForTeam />
+      <Certification />
       <Feedback />
       <Footer />
     </div>

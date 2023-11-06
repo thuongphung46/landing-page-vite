@@ -24,7 +24,7 @@ const NavbarMenu = () => {
             src={
               "https://w.ladicdn.com/5ea10d9ec9b9d03ddf95197a/logo-20231018151836-fheo0.svg"
             }
-            className="h-12"
+            className="h-16"
             alt="Logo"
           />
 
@@ -48,11 +48,6 @@ const NavbarMenu = () => {
                       bounce: 0.1,
                       type: "spring",
                     }}
-                    // style={{
-                    //   animationName: "bounceInUp",
-                    //   animationDelay: "0.7s",
-                    //   animationDuration: index *0.4 + "s",
-                    // }}
                   >
                     <motion.div
                       whileHover={{ scale: 1.1 }}

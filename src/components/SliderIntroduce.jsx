@@ -54,7 +54,7 @@ const sliderInForTeam = () => {
       <div className="md:max-w-[1000px] m-auto max-w-[600px]   px-4 md:px-0">
         <div className="text-center  py-2">
           <motion.h1
-            initial={{ x: -50, opacity: 0 }}
+            initial={{ x: -20, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "linear", delay: 0.2 }}
             className="py-1 text-3xl font-bold text-[#f44025] uppercase drop-shadow-lg"
@@ -63,7 +63,7 @@ const sliderInForTeam = () => {
           </motion.h1>
           <div className="h-[20px]"></div>
           <motion.p
-            initial={{ x: -50, opacity: 0 }}
+            initial={{ x: -20, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "linear", delay: 0.4 }}
             className="text-[#616161]"
@@ -71,9 +71,9 @@ const sliderInForTeam = () => {
             Với đội ngũ chuyên viên giàu kinh nghiệm, chuyên nghiệp.
           </motion.p>
           <motion.p
-            initial={{ x: -50, opacity: 0 }}
+            initial={{ x: -20, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5, ease: "linear", delay: 0.6 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.6 }}
             className="text-[#616161]"
           >
             Khách hàng sẽ được tư vấn một cách chi tiết nhiệt tình và hiệu quả
@@ -83,12 +83,22 @@ const sliderInForTeam = () => {
         <div className="h-[50px]"></div>
         <Slider {...settings}>
           {dataCard.map((item, index) => (
-            <CardInfor
+            <motion.div
               key={index}
-              image={item.image}
-              introduce={item.introduce}
-              name={item.name}
-            ></CardInfor>
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 0.5,
+                ease: "linear",
+                delay: index > 3 ? 0.3 : (index * 2) / 10,
+              }}
+            >
+              <CardInfor
+                image={item.image}
+                introduce={item.introduce}
+                name={item.name}
+              ></CardInfor>
+            </motion.div>
           ))}
         </Slider>
       </div>
