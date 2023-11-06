@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { dataCard } from "../constants/InforCardData";
 import { CardInfor } from "../atoms/CardInfor";
+import { motion } from "framer-motion";
 
 const sliderInForTeam = () => {
   var settings = {
@@ -52,17 +53,32 @@ const sliderInForTeam = () => {
     <div id="sliderIntroduce" className="w-full bg-white py-24">
       <div className="md:max-w-[1000px] m-auto max-w-[600px]   px-4 md:px-0">
         <div className="text-center  py-2">
-          <h1 className="py-1 text-3xl font-bold text-[#f44025] uppercase drop-shadow-lg">
+          <motion.h1
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "linear", delay: 0.2 }}
+            className="py-1 text-3xl font-bold text-[#f44025] uppercase drop-shadow-lg"
+          >
             Đội ngũ chuyên viên
-          </h1>
+          </motion.h1>
           <div className="h-[20px]"></div>
-          <p className="text-[#616161]">
+          <motion.p
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "linear", delay: 0.4 }}
+            className="text-[#616161]"
+          >
             Với đội ngũ chuyên viên giàu kinh nghiệm, chuyên nghiệp.
-          </p>
-          <p className="text-[#616161]">
+          </motion.p>
+          <motion.p
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "linear", delay: 0.6 }}
+            className="text-[#616161]"
+          >
             Khách hàng sẽ được tư vấn một cách chi tiết nhiệt tình và hiệu quả
             nhất!
-          </p>
+          </motion.p>
         </div>
         <div className="h-[50px]"></div>
         <Slider {...settings}>

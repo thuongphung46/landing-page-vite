@@ -1,7 +1,5 @@
 import {
   Hero,
-  Navbar,
-  Companies,
   Courses,
   Achievement,
   Feedback,
@@ -19,10 +17,8 @@ export const PageHome = () => {
       <Courses />
       <Achievement />
       <SliderInForTeam />
-      {/* <>CTA</> */}
       <Evaluate />
       <Certification/>
-      {/* <>Feedback</> */}
       <Feedback />
       <Footer />
     </div>

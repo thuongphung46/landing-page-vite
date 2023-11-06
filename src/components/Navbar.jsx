@@ -32,24 +32,33 @@ const NavbarMenu = () => {
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
-            className="hidden md:flex items-center">
+            className="hidden md:flex items-center"
+          >
             <ul className="flex gap-4">
               {list_button.map((item, index) => {
                 return (
                   <motion.div
                     key={index}
-                    style={{
-                      animationName: "bounceInUp",
-                      animationDelay: "0.7s",
-                      animationDuration: index *0.4 + "s",
+                    initial={{ y: 100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                      duration: 0.5 * index,
+                      ease: "linear",
+                      delay: 0.1,
+                      bounce: 0.1,
+                      type: "spring",
                     }}
-                    initial="offscreen"
-                    whileInView="onscreen">
+                    // style={{
+                    //   animationName: "bounceInUp",
+                    //   animationDelay: "0.7s",
+                    //   animationDuration: index *0.4 + "s",
+                    // }}
+                  >
                     <motion.div
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
-                      // variants={createCardVariants(0, index * 6)}
-                      className="hover:text-[#fff] cursor-pointer whitespace-nowrap font-bold text-white ">
+                      className="hover:text-[#fff] cursor-pointer whitespace-nowrap font-bold text-white "
+                    >
                       <Link
                         activeClass={active}
                         activeStyle={{
@@ -60,7 +69,8 @@ const NavbarMenu = () => {
                         smooth={true}
                         offset={-100}
                         duration={500}
-                        onSetActive={handleSetActive}>
+                        onSetActive={handleSetActive}
+                      >
                         {item.title}
                       </Link>
                     </motion.div>
@@ -80,7 +90,8 @@ const NavbarMenu = () => {
                 animationDelay: "0.7s",
                 animationDuration: "1.2s",
               }}
-              className="flex justify-between items-center bg-transparent px-6 gap-2 text-white">
+              className="flex justify-between items-center bg-transparent px-6 gap-2 text-white"
+            >
               <AiFillPhone className="text-white " />
               Liên hệ ngay
             </motion.button>
@@ -100,7 +111,8 @@ const NavbarMenu = () => {
             toggle
               ? "block p-4 bg-[#124b9c] w-full px-8 md:hidden border-b text-white"
               : "hidden"
-          }>
+          }
+        >
           <ul>
             {list_button.map((item, index) => {
               return (
@@ -108,7 +120,8 @@ const NavbarMenu = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   key={index}
-                  className="hover:text-[#000] m-w-[100%] cursor-pointer  hover:bg-gray-100 whitespace-nowrap">
+                  className="hover:text-[#000] m-w-[100%] cursor-pointer  hover:bg-gray-100 whitespace-nowrap"
+                >
                   <Link
                     activeClass="active"
                     to={item.link}
@@ -116,7 +129,8 @@ const NavbarMenu = () => {
                     smooth={true}
                     offset={-100}
                     duration={500}
-                    onSetActive={handleSetActive}>
+                    onSetActive={handleSetActive}
+                  >
                     <div className="py-4 w-auto ">{item.title}</div>
                   </Link>
                 </motion.li>
@@ -126,7 +140,8 @@ const NavbarMenu = () => {
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="border border-[white] text-white flex justify-center items-center bg-transparent px-6 gap-2 py-4">
+                className="border border-[white] text-white flex justify-center items-center bg-transparent px-6 gap-2 py-4"
+              >
                 <AiFillPhone className="text-white " />
                 Liên hệ ngay
               </motion.button>

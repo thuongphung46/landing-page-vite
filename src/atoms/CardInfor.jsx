@@ -1,12 +1,14 @@
 import React from "react";
-import {createCardVariants} from "../constants/function";
+import { createCardVariants } from "../constants/function";
 import { motion } from "framer-motion";
 
 export const CardInfor = ({ name, image, introduce }) => {
   return (
-    <motion.div initial="offscreen" whileInView="onscreen">
+    <motion.div>
       <motion.div
-        variants={createCardVariants(0, 5)}
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: "linear", delay: 0.4 }}
         className="ml-4 mr-4 max-w-sm bg-[#f4f4f4] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 "
       >
         <motion.div className="w-full justify-center  flex p-5">

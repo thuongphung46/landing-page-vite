@@ -31,8 +31,13 @@ const Hero = () => {
         }`}
       >
         <div className="flex flex-col justify-start  gap-4">
-          <motion.div
-            variants={createCardVariants(0, 5)}
+          <motion.div 
+          style={{
+            animationName:"fadeInLeft",
+            animationDuration: '1s',
+            animationTimingFunction: 'ease-out',
+          }}
+            // variants={createCardVariants(0, 5)}
             className={` text-[#fff] flex  font-bold ${
               isSmallScreen ? "text-xl justify-center" : "text-4xl"
             }`}
@@ -40,7 +45,12 @@ const Hero = () => {
             <p className="mr-[4px] text-[#03fff8] ">HITO </p>SỰ LỰA CHỌN
           </motion.div>
           <motion.p
-            variants={createCardVariants(0, 7)}
+            // variants={createCardVariants(0, 7)}
+            style={{
+              animationName:"fadeInLeft",
+              animationDuration: '1.5s',
+              animationTimingFunction: 'ease-out',
+            }}
             className={` text-[#fff] font-bold ${
               isSmallScreen ? "text-xl" : "text-4xl"
             }`}
@@ -48,7 +58,12 @@ const Hero = () => {
             HÀNG ĐẦU
           </motion.p>
           <motion.p
-            variants={createCardVariants(0, 9)}
+            // variants={createCardVariants(0, 9)}
+            style={{
+              animationName:"fadeInLeft",
+              animationDuration: '2s',
+              animationTimingFunction: 'ease-out',
+            }}
             className={` text-[#fff] font-bold ${
               isSmallScreen ? "text-xl" : "text-4xl"
             }`}
@@ -56,7 +71,12 @@ const Hero = () => {
             CHO NGƯỜI THẤP LÙN
           </motion.p>
           <motion.div
-            variants={createCardVariants(0, 12)}
+            // variants={createCardVariants(0, 12)}
+            style={{
+              animationName:"fadeInLeft",
+              animationDuration: '2.5s',
+              animationTimingFunction: 'ease-out',
+            }}
             className={`bold  text-[#fff] font-bold ${
               isSmallScreen ? "text-[10px]" : "text-xl"
             }`}
@@ -64,7 +84,12 @@ const Hero = () => {
             Chúng tôi tự hào là một trong những đơn vị tiên phong
           </motion.div>
           <motion.div
-            variants={createCardVariants(0, 14)}
+            // variants={createCardVariants(0, 14)}
+            style={{
+              animationName:"fadeInLeft",
+              animationDuration: '3s',
+              animationTimingFunction: 'ease-out',
+            }}
             className={`bold  text-[#fff] font-bold ${
               isSmallScreen ? "text-[10px]" : "text-xl"
             }`}
@@ -74,7 +99,12 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            variants={createCardVariants(0, 16)}
+            style={{
+              animationName:"fadeInLeft",
+              animationDuration: '2s',
+              animationTimingFunction: 'ease-out',
+            }}
+            // variants={createCardVariants(0, 16)}
             className={`border-white border max-w-[200px] h-[48px] font-bold text-[#fff] ${
               isSmallScreen ? "" : ""
             }`}
@@ -83,9 +113,13 @@ const Hero = () => {
           </motion.button>
         </div>
         <div className="w-full text-center justify-center order-first md:order-last flex">
-          {" "}
           <motion.img
-            variants={createCardVariants(0, 18)}
+            // variants={createCardVariants(0, 18)}
+            style={{
+              animationName:"fadeInRight",
+              animationDuration: '2s',
+              animationTimingFunction: 'ease-out',
+            }}
             src={
               "https://w.ladicdn.com/s650x650/5e476fd054f5fa0a4cfbc867/comsd-20230330114528-y9jz0.png"
             }
