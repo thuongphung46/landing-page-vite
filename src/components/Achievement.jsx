@@ -61,7 +61,7 @@ const Achievement = () => {
               "https://www.youtube.com/embed/MgCBn_hdjGg?rel=0&modestbranding=0&playsinline=1&controls=1&enablejsapi=1&origin=http%3A%2F%2Fwww.hitocenter.com&widgetid=2"
             }
           ></ReactPlayer>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
