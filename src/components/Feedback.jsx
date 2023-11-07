@@ -2,8 +2,9 @@ import React from "react";
 import { Card } from "./Card";
 import Slider from "react-slick";
 import { courses } from "../data/Courses";
-import FeedbackCard from "./FeedbackCard";
+import { FeedbackCard, FeedbackMessCard } from "../atoms/FeedbackCard";
 import { DataEvaluate } from "../data/UrlVDFeedback";
+import { DataMessImg } from "../data/UrlImages";
 import { motion } from "framer-motion";
 
 const Feedback = () => {
@@ -96,6 +97,23 @@ const Feedback = () => {
               key={i}
             >
               <FeedbackCard url={items.url} />
+            </motion.div>
+          ))}
+        </Slider>
+
+        <Slider {...settings}>
+          {DataMessImg.map((items, i) => (
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 0.5,
+                ease: "linear",
+                delay: (i * 2) / 10,
+              }}
+              key={i}
+            >
+              <FeedbackMessCard url={items.url} />
             </motion.div>
           ))}
         </Slider>
