@@ -4,7 +4,7 @@ import UseGetWith from "../hook/useGetWith";
 import { motion } from "framer-motion";
 
 const Achievement = () => {
-  const { height, width } = UseGetWith();
+  const { width } = UseGetWith();
   const SizeWidth = width < 600;
   return (
     <div id="achievement" className="w-full bg-white py-24">
@@ -46,25 +46,15 @@ const Achievement = () => {
           </motion.p>
         </div>
 
-        <motion.div
+        <motion.iframe
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.4, ease: "linear", delay: 0.8 }}
+          width={width < 1024 ? `320` : "640px"}
+          height={width < 1024 ? `180` : "360px"}
           className="m-auto md:order-last  order-first rounded drop-shadow-xl"
-          style={{
-            overflow: "auto",
-          }}
-        >
-          <ReactPlayer
-            width={width < 1024 ? `100%` : "580px"}
-            loop
-            muted
-            playing
-            url={
-              "https://www.youtube.com/embed/MgCBn_hdjGg?rel=0&modestbranding=0&playsinline=1&controls=1&enablejsapi=1&origin=http%3A%2F%2Fwww.hitocenter.com&widgetid=2"
-            }
-          ></ReactPlayer>
-        </motion.div>
+          src="https://www.youtube.com/embed/MgCBn_hdjGg?autoplay=1&mute=1&loop=1&controls=0"
+        ></motion.iframe>
       </div>
     </div>
   );
