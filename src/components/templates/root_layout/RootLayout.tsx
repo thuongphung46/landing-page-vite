@@ -1,6 +1,7 @@
 import React from "react";
 import NavBarMenu from "../../Navbar";
 import { Navigate, Outlet } from "react-router-dom";
+import { FooterCecond } from "../../../atoms/footer_second";
 
 const RootLayout = () => {
   const auth = true;
@@ -13,7 +14,8 @@ const RootLayout = () => {
           flex: 1,
           // height: "100vh",
           // flexDirection: "row",
-        }}>
+        }}
+      >
         <NavBarMenu />
         <div
           id={"main-view"}
@@ -22,9 +24,11 @@ const RootLayout = () => {
             height: "100%",
             flex: 1,
             overflow: "auto",
-          }}>
+          }}
+        >
           <Outlet />
         </div>
+        <FooterCecond />
       </div>
     );
   } else {
