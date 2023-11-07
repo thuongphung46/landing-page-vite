@@ -19,9 +19,8 @@
 
 .slick-next:before{
   position: absolute;
-  right:0;
-   margin-top: -10px;
-   margin-right: 5px;
+  right:0px;
+   margin-top: -10px;margin-right: 5px;
 }
 
 .slick-next,
