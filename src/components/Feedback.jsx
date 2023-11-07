@@ -16,7 +16,7 @@ const Feedback = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1324,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -25,7 +25,7 @@ const Feedback = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 765,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -34,7 +34,7 @@ const Feedback = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -109,7 +109,7 @@ const Feedback = () => {
               transition={{
                 duration: 0.5,
                 ease: "linear",
-                delay: (i * 2) / 10,
+                delay: i > 3 ? 0.3 : (i * 2) / 10,
               }}
               key={i}
             >
