@@ -1,11 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { createCardVariants } from "../constants/function";
-import useWindowDimensions from "../hook/useGetWith";
-import FooterHeader from "../atoms/footerHeader";
-import { Slideshow } from "../atoms/slider";
-import { URLHeaderSlide } from "../data/URL_header_slider";
-
+import useWindowDimensions from "../../../hook/useGetWith";
+import FooterHeader from "../../../atoms/footerHeader";
 const calculateFontSize = (width, height) => {
   const baseFontSize = 16;
   const minWidth = 500;
@@ -15,7 +11,7 @@ const calculateFontSize = (width, height) => {
   return calculatedFontSize;
 };
 
-const Hero = () => {
+export const ExerciseTemplate = () => {
   const { height, width } = useWindowDimensions();
   const fontSize = calculateFontSize(width, height);
 
@@ -45,7 +41,9 @@ const Hero = () => {
               isSmallScreen ? "text-xl justify-center" : "text-4xl"
             }`}
           >
-            <p className="mr-[4px] text-[#03fff8] ">HITO </p>SỰ LỰA CHỌN
+            <p className="mr-[4px] text-[#03fff8] ">
+              RÈN LUYỆN THỂ CHẤT MỖI NGÀY
+            </p>
           </motion.div>
           <motion.p
             // variants={createCardVariants(0, 7)}
@@ -58,7 +56,7 @@ const Hero = () => {
               isSmallScreen ? "text-xl" : "text-4xl"
             }`}
           >
-            HÀNG ĐẦU
+            TỪNG BƯỚC HIỆN THỰC HÓA
           </motion.p>
           <motion.p
             // variants={createCardVariants(0, 9)}
@@ -71,7 +69,7 @@ const Hero = () => {
               isSmallScreen ? "text-xl" : "text-4xl"
             }`}
           >
-            CHO NGƯỜI THẤP LÙN
+            ƯỚC MƠ CHIỀU CAO CỦA BẠN
           </motion.p>
           <motion.div
             // variants={createCardVariants(0, 12)}
@@ -97,7 +95,7 @@ const Hero = () => {
               isSmallScreen ? "text-[10px]" : "text-xl"
             }`}
           >
-            trong sứ mệnh nâng tầm vóc dáng người việt
+            trong sứ mệnh nâng tầm vóc dáng người Việt
           </motion.div>
           <motion.button
             whileHover={{ scale: 1.1 }}
@@ -115,26 +113,22 @@ const Hero = () => {
             Buy Now
           </motion.button>
         </div>
-        {/* <div className="w-full text-center justify-center order-first md:order-last flex"> */}
-        <div className=" m-auto md:order-last  order-first rounded drop-shadow-xl">
-          {/* <motion.img
+        <div className="w-full text-center justify-center order-first md:order-last flex">
+          <motion.img
             // variants={createCardVariants(0, 18)}
             style={{
-              animationName:"fadeInRight",
-              animationDuration: '2s',
-              animationTimingFunction: 'ease-out',
+              animationName: "fadeInRight",
+              animationDuration: "2s",
+              animationTimingFunction: "ease-out",
             }}
             src={
-              "https://w.ladicdn.com/s650x650/5e476fd054f5fa0a4cfbc867/comsd-20230330114528-y9jz0.png"
+              "https://w.ladicdn.com/s750x750/5e476fd054f5fa0a4cfbc867/dau-20230826083853-2ewfi.jpg"
             }
             className={`  ${isSmallScreen ? "max-h-[200px] " : ""} `}
-          /> */}
-          <Slideshow type={"image"} data={URLHeaderSlide} delay={2500} />
+          />
         </div>
       </div>
       <FooterHeader />
     </motion.div>
   );
 };
-
-export default Hero;
