@@ -2,6 +2,7 @@ import React from "react";
 import NavBarMenu from "../../Navbar";
 import { Navigate, Outlet } from "react-router-dom";
 import { FooterCecond } from "../../../atoms/footer_second";
+import { Footer } from "../../../components";
 
 const RootLayout = () => {
   const auth = true;
@@ -10,10 +11,7 @@ const RootLayout = () => {
       <div
         className={"main-app"}
         style={{
-          // display: "flex",
           flex: 1,
-          // height: "100vh",
-          // flexDirection: "row",
         }}
       >
         <NavBarMenu />
@@ -28,6 +26,7 @@ const RootLayout = () => {
         >
           <Outlet />
         </div>
+        <Footer />
         <FooterCecond />
       </div>
     );

@@ -20,7 +20,6 @@ export const PageHome = () => {
       <SliderInForTeam />
       <Certification />
       <Feedback />
-      <Footer />
     </div>
   );
 };

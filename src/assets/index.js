@@ -29,6 +29,8 @@ import Image13 from "./message13.jpg";
 import Image14 from "./message14.jpg";
 import Image15 from "./message15.jpg";
 import ImgNguyenHue from "./NguyenHue.png";
+import ImgNguyenThuy from "./nguyenThuy.png";
+import ImgThuyLinh from "./ThuyLinh.png";
 
 export {
   hamburgerMenu,
@@ -62,4 +64,6 @@ export {
   Image14,
   Image15,
   ImgNguyenHue,
+  ImgNguyenThuy,
+  ImgThuyLinh,
 };
