@@ -1,5 +1,6 @@
 import UseGetWith from "../hook/useGetWith";
 import { motion } from "framer-motion";
+import { Data } from "../data/IntroduceURLData";
 import { Slideshow } from "../atoms/slider";
 
 const Achievement = () => {
@@ -51,7 +52,7 @@ const Achievement = () => {
           }}
           className={`m-auto md:order-last  order-first rounded drop-shadow-xl`}
         >
-          <Slideshow />
+          <Slideshow type={"video"} data={Data} />
         </div>
       </div>
     </div>

@@ -31,6 +31,7 @@ import Image15 from "./message15.jpg";
 import ImgNguyenHue from "./NguyenHue.png";
 import ImgNguyenThuy from "./nguyenThuy.png";
 import ImgThuyLinh from "./ThuyLinh.png";
+import ImgVienNang from "./vien_nang_hito.png";
 
 export {
   hamburgerMenu,
@@ -66,4 +67,5 @@ export {
   ImgNguyenHue,
   ImgNguyenThuy,
   ImgThuyLinh,
+  ImgVienNang,
 };

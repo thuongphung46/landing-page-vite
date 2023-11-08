@@ -1,17 +1,13 @@
-import {
-  Hero,
-  Courses,
-  Achievement,
-  Feedback,
-  Evaluate,
-  Footer,
-  SliderInForTeam,
-  Certification,
-} from "../components";
-import "../App.css";
+import { ExerciseTemplate } from "../components/templates/ExerciseTemplate";
+import { CardExercise } from "../atoms/CardExercise";
 
 export const PageExercise = () => {
-  return <div>test</div>;
+  return (
+    <>
+      <ExerciseTemplate />
+      <CardExercise />
+    </>
+  );
 };
 
 //   export default ;
