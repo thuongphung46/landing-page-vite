@@ -1,8 +1,8 @@
 export const list_button = [
   {
-    type: "links_croll",
+    type: "link_router",
     title: "Trang chủ",
-    link: "#",
+    link: "/",
   },
   {
     type: "links_croll",

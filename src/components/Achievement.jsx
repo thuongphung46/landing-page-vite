@@ -52,7 +52,7 @@ const Achievement = () => {
           }}
           className={`m-auto md:order-last  order-first rounded drop-shadow-xl`}
         >
-          <Slideshow type={"video"} data={Data} />
+          <Slideshow type={"video"} data={Data} delay={25000} />
         </div>
       </div>
     </div>

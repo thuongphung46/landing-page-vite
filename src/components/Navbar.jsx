@@ -30,6 +30,7 @@ const NavbarMenu = () => {
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-[#0176b7] shadow-md">
         <div className="md:max-w-screen-xl max-w-screen-sm mx-auto w-full h-[80px] flex justify-between items-center md:px-0 px-4">
           <img
+            onClick={handleRouterClick}
             src={
               "https://w.ladicdn.com/5ea10d9ec9b9d03ddf95197a/logo-20231018151836-fheo0.svg"
             }
@@ -135,17 +136,28 @@ const NavbarMenu = () => {
                   key={index}
                   className="hover:text-[#000] m-w-[100%] cursor-pointer  hover:bg-gray-100 whitespace-nowrap"
                 >
-                  <LinkScroll
-                    activeClass="active"
-                    to={item.link}
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <div className="py-4 w-auto ">{item.title}</div>
-                  </LinkScroll>
+                  {item.type === "link_router" ? (
+                    <>
+                      <LinkRouter to={item.link}>
+                        <div className="py-4 w-auto ">{item.title}</div>
+                      </LinkRouter>
+                    </>
+                  ) : (
+                    <>
+                      <LinkScroll
+                        activeClass="active"
+                        to={item.link}
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        onClick={handleRouterClick}
+                        onSetActive={handleSetActive}
+                      >
+                        <div className="py-4 w-auto ">{item.title}</div>
+                      </LinkScroll>
+                    </>
+                  )}
                 </motion.li>
               );
             })}

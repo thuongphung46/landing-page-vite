@@ -4,9 +4,7 @@ import UseGetWith from "../../hook/useGetWith";
 import { motion } from "framer-motion";
 import { FcNext, FcPrevious } from "react-icons/fc";
 
-const delay = 25000;
-
-export const Slideshow = ({ data, type }) => {
+export const Slideshow = ({ data, type, delay }) => {
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
   const { width } = UseGetWith();

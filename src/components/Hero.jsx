@@ -129,7 +129,7 @@ const Hero = () => {
             }
             className={`  ${isSmallScreen ? "max-h-[200px] " : ""} `}
           /> */}
-          <Slideshow type={"image"} data={URLHeaderSlide} />
+          <Slideshow type={"image"} data={URLHeaderSlide} delay={2500} />
         </div>
       </div>
       <FooterHeader />
