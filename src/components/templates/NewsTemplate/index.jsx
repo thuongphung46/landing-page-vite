@@ -1,12 +1,12 @@
 import { CardNews } from "../../../atoms/CardNews";
 import { List_news_data } from "../../../data/ListNewsData";
-
+import "./index.scss";
 export const NewsTemplate = () => {
   return (
-    <div>
-      <div>
+    <div className="w-full flex justify-center items-center">
+      <div className="row">
         {List_news_data.map((data, i) => (
-          <div className="p-[8px]">
+          <div className="p-[8px] column-list-news">
             <CardNews
               title={data.title}
               detail={data.detail}

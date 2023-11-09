@@ -12,7 +12,6 @@ import achievement from "./achievement.png";
 import avatar from "./avatar.png";
 import quotationMark from "./quotationMark.png";
 import cta from "./cta.png";
-import VideoPlayIntroduce from "./videoplayback.mp4";
 import Image1 from "./message1.png";
 import Image2 from "./message2.png";
 import Image3 from "./message3.png";
@@ -33,6 +32,12 @@ import ImgNguyenThuy from "./nguyenThuy.png";
 import ImgThuyLinh from "./ThuyLinh.png";
 import ImgVienNang from "./vien_nang_hito.png";
 import ImgDoTuoi from "./image_do_tuoi.png";
+import ImgMoneyGram from "./moneygram.png";
+import ImgRemitly from "./remitly.png";
+import ImgPaypal from "./paypal.png";
+import ImgWebtern from "./webtern_union.png";
+import ImgMaster from "./masterCard.png";
+import ImgVisa from "./visa.png";
 
 export {
   hamburgerMenu,
@@ -49,7 +54,6 @@ export {
   avatar,
   quotationMark,
   cta,
-  VideoPlayIntroduce,
   Image1,
   Image2,
   Image3,
@@ -70,4 +74,10 @@ export {
   ImgThuyLinh,
   ImgVienNang,
   ImgDoTuoi,
+  ImgMoneyGram,
+  ImgRemitly,
+  ImgPaypal,
+  ImgWebtern,
+  ImgMaster,
+  ImgVisa,
 };

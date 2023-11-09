@@ -1,4 +1,3 @@
-import VideoPlayIntroduce from "../assets/videoplayback.mp4";
 import { motion } from "framer-motion";
 
 const Certification = () => {
@@ -33,7 +32,6 @@ const Certification = () => {
               style={{
                 // animationName: "bounceInUp",
                 // animationDelay: "0.5s",
-                // animationDuration: "1.2s",
                 height: "100%",
               }}
               src={
