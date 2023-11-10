@@ -38,6 +38,7 @@ import ImgPaypal from "./paypal.png";
 import ImgWebtern from "./webtern_union.png";
 import ImgMaster from "./masterCard.png";
 import ImgVisa from "./visa.png";
+import ImageCard from "./imagecard.png";
 
 export {
   hamburgerMenu,
@@ -80,4 +81,5 @@ export {
   ImgWebtern,
   ImgMaster,
   ImgVisa,
+  ImageCard,
 };
