@@ -28,7 +28,7 @@ export const BasicExample = () => {
               <div>
                 <label
                   for="name"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Họ tên
                 </label>
@@ -41,7 +41,6 @@ export const BasicExample = () => {
                 />
               </div>
 
-    
               <div className="mb-6 flex items-center justify-between">
                 {/* <!-- Remember me checkbox --> */}
                 <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
