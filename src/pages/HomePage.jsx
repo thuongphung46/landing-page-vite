@@ -4,10 +4,9 @@ import {
   Achievement,
   Feedback,
   Evaluate,
-  Footer,
   SliderInForTeam,
-  Certification,
 } from "../components";
+import { Certification } from "../components/templates/certification";
 import { AllAges } from "../atoms/all_ages";
 import "../App.css";
 

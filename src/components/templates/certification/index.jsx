@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { Data } from "../../../data/CertificationData";
+import "./index.scss";
 
-const Certification = () => {
+export const Certification = () => {
   return (
     <div id="certification" className="w-full bg-white py-24">
       <div className="md:max-w-[1480px] m-auto grid md:grid-cols-1 max-w-[600px]  px-4 md:px-0">
@@ -24,38 +26,25 @@ const Certification = () => {
           </motion.p>
         </div>
         <div className="flex grid-cols-2 justify-center">
-          <div className="sm flex flex-col justify-center bg-cover max-w-[400px] rounded">
-            <motion.img
-              initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, ease: "linear", delay: 0.2 }}
-              style={{
-                // animationName: "bounceInUp",
-                // animationDelay: "0.5s",
-                height: "100%",
-              }}
-              src={
-                "https://w.ladicdn.com/s700x800/5e476fd054f5fa0a4cfbc867/giaithuong2-20230821154004-1oaek.jpg"
-              }
-            ></motion.img>
-          </div>
-          <div className="sm flex flex-col justify-center bg-cover max-w-[400px] rounded">
-            <motion.img
-              initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, ease: "linear", delay: 0.4 }}
-              style={{
-                height: "100%",
-              }}
-              src={
-                "https://w.ladicdn.com/s650x800/5e476fd054f5fa0a4cfbc867/gcb-a-20230821154103-arta_.png"
-              }
-            ></motion.img>
+          <div className="md:w-[1200px] justify-center items-center row-certification">
+            {Data.map((items, i) => (
+              <div
+                key={i}
+                className="md:max-w-[1100px]"
+                // className=" sm flex flex-col justify-center bg-cover max-w-[400px] rounded column-certification"
+              >
+                <motion.img
+                  className=" column-certification"
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.5, ease: "linear", delay: 0.2 }}
+                  src={items.url}
+                ></motion.img>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </div>
   );
 };
-
-export default Certification;

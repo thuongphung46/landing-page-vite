@@ -7,9 +7,17 @@ import Categories from "./Categories";
 import Feedback from "./Feedback";
 import Evaluate from "./Evaluate";
 import Footer from "./Footer";
-import SliderInForTeam from "./SliderIntroduce"
-import Certification from "./Certification";
+import SliderInForTeam from "./SliderIntroduce";
 
-
-
-export {Navbar,Hero, Companies,Courses,Achievement,Categories,Feedback,Evaluate,Footer , SliderInForTeam, Certification}
+export {
+  Navbar,
+  Hero,
+  Companies,
+  Courses,
+  Achievement,
+  Categories,
+  Feedback,
+  Evaluate,
+  Footer,
+  SliderInForTeam,
+};
