@@ -108,7 +108,12 @@ const NavbarMenu = () => {
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                // variants={createCardVariants(0, 12)}
+                animate={{ scale: 1.2 }}
+                transition={{
+                  duration: 0.3,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                }}
                 style={{
                   animationName: "bounceInUp",
                   animationDelay: "0.7s",

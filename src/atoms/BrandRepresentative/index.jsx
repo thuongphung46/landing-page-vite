@@ -83,6 +83,8 @@ export const SlideBrandRepresentative = ({ data, delay }) => {
                 transition={{ duration: 0.4, ease: "linear", delay: 0.8 }}
                 style={{
                   height: "100%",
+                  width: "100%",
+                  objectFit: "contain",
                 }}
                 src={items.url}
               ></motion.img>

@@ -1,14 +1,14 @@
 import UseGetWith from "../../../hook/useGetWith";
 import { motion } from "framer-motion";
 import { SlideBrandRepresentative } from "../../../atoms/BrandRepresentative";
-import { ImgPrbongda, ImgPrbongda1, ImgPrbongda2 } from "../../../assets";
+import { ImgPrbongda, ImgPrbongda1 } from "../../../assets";
 
 const Data = [
   {
     url: ImgPrbongda,
   },
   {
-    url: ImgPrbongda2,
+    url: ImgPrbongda1,
   },
 ];
 export const BrandRepresentative = () => {
@@ -22,7 +22,7 @@ export const BrandRepresentative = () => {
           style={{
             marginBottom: "20px",
           }}
-          className={`m-auto md:order-first  order-first rounded drop-shadow-xl`}
+          className={`m-auto md:order-last  order-first rounded drop-shadow-xl`}
         >
           <SlideBrandRepresentative data={Data} delay={2500} />
         </div>
@@ -54,16 +54,6 @@ export const BrandRepresentative = () => {
             viên giàu kinh nghiệm.
           </motion.p>
           <p className="h-[30px]"></p>
-          {/* <motion.p
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5, ease: "linear", delay: 0.6 }}
-            className="text-lg text-gray-600 text-justify"
-          >
-            Với chất lượng và hiệu quả vượt trội, Canxi Hito tự hào giành được
-            hàng loạt giải thưởng uy tín khu vực Đông Nam Á, Châu Á với hơn 5
-            triệu khách hàng tin tưởng sử dụng từ khắp nơi trên thế giới.
-          </motion.p> */}
         </div>
       </div>
     </div>
