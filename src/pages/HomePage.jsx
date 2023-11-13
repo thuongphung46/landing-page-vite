@@ -7,6 +7,7 @@ import {
   SliderInForTeam,
 } from "../components";
 import { Certification } from "../components/templates/certification";
+import { BrandRepresentative } from "../components/Molecules/BrandRepresentative";
 import { AllAges } from "../atoms/all_ages";
 import "../App.css";
 
@@ -17,6 +18,7 @@ export const PageHome = () => {
       <Courses />
       <AllAges />
       <Achievement />
+      <BrandRepresentative />
       <Evaluate />
       <SliderInForTeam />
       <Certification />

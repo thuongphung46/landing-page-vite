@@ -52,6 +52,7 @@ import ImgBaiTap9 from "./baitap10.jpg";
 import ImgBaiTap10 from "./baitap11.jpg";
 import ImgPrbongda from "./prbongda.png";
 import ImgPrbongda1 from "./qc_thuonghieu.jpg";
+import ImgPrbongda2 from "./daidienthuonghieu.png";
 import ImgCertification1 from "./chungnhan.jpg";
 import ImgCertification2 from "./chungnhan2.png";
 
@@ -109,6 +110,7 @@ export {
   ImgBaiTap10,
   ImgPrbongda,
   ImgPrbongda1,
+  ImgPrbongda2,
   ImgCertification1,
   ImgCertification2,
 };
