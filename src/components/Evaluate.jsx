@@ -24,6 +24,7 @@ const Evaluate = () => {
       {DataEvaluate.map((item, i) => (
         <CTA
           key={i}
+          left={i % 2 === 0}
           name={item.name}
           image={item.image}
           detail={item.dettail}

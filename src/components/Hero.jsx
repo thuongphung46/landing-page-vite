@@ -99,21 +99,33 @@ const Hero = () => {
           >
             trong sứ mệnh nâng tầm vóc dáng người việt
           </motion.div>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            style={{
-              animationName: "fadeInLeft",
-              animationDuration: "2s",
-              animationTimingFunction: "ease-out",
-            }}
-            // variants={createCardVariants(0, 16)}
-            className={`border-white border max-w-[200px] h-[48px] font-bold text-[#fff] ${
-              isSmallScreen ? "" : ""
-            }`}
+          <a
+            // className=" w-[300px]"
+            target="_blank"
+            href="https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2Ftoninamhito%3Ffbclid%3DIwAR15LbJC0aIIcYQf-a0kusZKeHtXq7VA7k-rCC-kMG-Vil6M4dZSZ0Luxy0&h=AT1n70XcnbjYsxskR3xX3gSVVsLPibS8UnwxrGrRTty-4ENlrPReoPY4nRhIAikhDFbVJviEFCMsn7V__STlye4MztMaLFswmTcADl8Qb2dICfH6-Rtv04fYdjDFRplO1I_-YtEpqtI7z9qxwBFHlw"
           >
-            Buy Now
-          </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              animate={{ scale: 1.1 }}
+              transition={{
+                duration: 0.4,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              style={{
+                animationName: "fadeInLeft",
+                animationDuration: "2s",
+                animationTimingFunction: "ease-out",
+              }}
+              // variants={createCardVariants(0, 16)}
+              className={`border-white border max-w-[200px] w-[200px] h-[48px] font-bold text-[#fff] ${
+                isSmallScreen ? "" : ""
+              }`}
+            >
+              Buy Now
+            </motion.button>
+          </a>
         </div>
         {/* <div className="w-full text-center justify-center order-first md:order-last flex"> */}
         <div className=" m-auto md:order-last  order-first rounded drop-shadow-xl">

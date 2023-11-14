@@ -12,7 +12,6 @@ import achievement from "./achievement.png";
 import avatar from "./avatar.png";
 import quotationMark from "./quotationMark.png";
 import cta from "./cta.png";
-import VideoPlayIntroduce from "./videoplayback.mp4";
 import Image1 from "./message1.png";
 import Image2 from "./message2.png";
 import Image3 from "./message3.png";
@@ -33,6 +32,29 @@ import ImgNguyenThuy from "./nguyenThuy.png";
 import ImgThuyLinh from "./ThuyLinh.png";
 import ImgVienNang from "./vien_nang_hito.png";
 import ImgDoTuoi from "./image_do_tuoi.png";
+import ImgMoneyGram from "./moneygram.png";
+import ImgRemitly from "./remitly.png";
+import ImgPaypal from "./paypal.png";
+import ImgWebtern from "./webtern_union.png";
+import ImgMaster from "./masterCard.png";
+import ImgVisa from "./visa.png";
+import ImageCard from "./imagecard.png";
+import ImgBaiTap from "./baitap.jpg";
+import ImgBaiTap1 from "./baitap2.jpg";
+import ImgBaiTap2 from "./baitap3.jpg";
+import ImgBaiTap3 from "./baitap4.jpg";
+import ImgBaiTap4 from "./baitap5.jpg";
+import ImgBaiTap5 from "./baitap6.jpg";
+import ImgBaiTap6 from "./baitap7.jpg";
+import ImgBaiTap7 from "./baitap8.jpg";
+import ImgBaiTap8 from "./baitap9.png";
+import ImgBaiTap9 from "./baitap10.jpg";
+import ImgBaiTap10 from "./baitap11.jpg";
+import ImgPrbongda from "./prbongda.png";
+import ImgPrbongda1 from "./qc_thuonghieu.jpg";
+import ImgPrbongda2 from "./daidienthuonghieu.png";
+import ImgCertification1 from "./chungnhan.jpg";
+import ImgCertification2 from "./chungnhan2.png";
 
 export {
   hamburgerMenu,
@@ -49,7 +71,6 @@ export {
   avatar,
   quotationMark,
   cta,
-  VideoPlayIntroduce,
   Image1,
   Image2,
   Image3,
@@ -70,4 +91,26 @@ export {
   ImgThuyLinh,
   ImgVienNang,
   ImgDoTuoi,
+  ImgMoneyGram,
+  ImgRemitly,
+  ImgPaypal,
+  ImgWebtern,
+  ImgMaster,
+  ImgVisa,
+  ImageCard,
+  ImgBaiTap,
+  ImgBaiTap2,
+  ImgBaiTap3,
+  ImgBaiTap4,
+  ImgBaiTap5,
+  ImgBaiTap6,
+  ImgBaiTap7,
+  ImgBaiTap8,
+  ImgBaiTap9,
+  ImgBaiTap10,
+  ImgPrbongda,
+  ImgPrbongda1,
+  ImgPrbongda2,
+  ImgCertification1,
+  ImgCertification2,
 };

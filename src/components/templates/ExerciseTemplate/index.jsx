@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import useWindowDimensions from "../../../hook/useGetWith";
 import FooterHeader from "../../../atoms/footerHeader";
+import { ImgBaiTap4 } from "../../../assets";
 const calculateFontSize = (width, height) => {
   const baseFontSize = 16;
   const minWidth = 500;
@@ -121,10 +122,8 @@ export const ExerciseTemplate = () => {
               animationDuration: "2s",
               animationTimingFunction: "ease-out",
             }}
-            src={
-              "https://w.ladicdn.com/s750x750/5e476fd054f5fa0a4cfbc867/dau-20230826083853-2ewfi.jpg"
-            }
-            className={`  ${isSmallScreen ? "max-h-[200px] " : ""} `}
+            src={ImgBaiTap4}
+            className={`rounded  ${isSmallScreen ? "max-h-[200px] " : ""} `}
           />
         </div>
       </div>

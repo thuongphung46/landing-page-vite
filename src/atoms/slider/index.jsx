@@ -55,9 +55,9 @@ export const Slideshow = ({ data, type, delay }) => {
     } else if (width > 600 && type === "video") {
       return "360px";
     } else if (width < 600 && type === "image") {
-      return "180px";
+      return "260px";
     } else if (width > 600 && type === "image") {
-      return "360px";
+      return "500px";
     }
   };
 

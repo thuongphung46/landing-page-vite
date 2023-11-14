@@ -1,61 +1,99 @@
+import {
+  ImgMoneyGram,
+  ImgRemitly,
+  ImgPaypal,
+  ImgWebtern,
+  ImgVisa,
+  ImageCard,
+} from "../assets";
+
 export const FooterCecond = () => {
   return (
-    <>
-      <footer class="bg-black font-sans text-[white] bg-[#000]">
-        <div class="container px-6 py-12 mx-auto">
-          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-            <div className="flex justify-between">
-              {/* <p class="font-semibold text-gray-800 dark:text-white">
-                
-              </p> */}
-
-              <div class="flex flex-col items-start mt-5 space-y-2">
-                <p class=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+    <footer className="bg-black text-center text-white dark:bg-black dark:text-white lg:text-left">
+      <div className="mx-6 py-10 text-left md:text-left">
+        <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+          {/* <div className="">
+            <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="mr-3 h-4 w-4"
+              >
+                <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+              </svg>
+              TW elements
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div> */}
+          <div className="flex justify-between">
+            {" "}
+            <div className="">
+              {/* <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Products
+            </h6> */}
+              <p className="mb-4">
+                <a href="#!" className="text-white dark:text-white">
                   Giới thiệu
-                </p>
-                <p class=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                </a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className="text-white dark:text-white">
                   Điều khoản dịch vụ
-                </p>
-                <p class=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                </a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className="text-white dark:text-white">
                   Chính sách thanh toán
-                </p>
-              </div>
-
-              {/* <p class="font-semibold text-gray-800 dark:text-white">
-                Industries
-              </p> */}
-
-              <div class="flex flex-col items-start mt-5 space-y-2">
-                <p class=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                </a>
+              </p>
+            </div>
+            <div className="">
+              {/* <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Useful links
+            </h6> */}
+              <p className="mb-4">
+                <a href="#!" className="text-white dark:text-white">
                   Chính sách đổi trả
-                </p>
-                <p class=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                </a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className="text-white dark:text-white">
                   Chính sách bảo mật
-                </p>
-                <p class=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                </a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className="text-white dark:text-white">
                   Chính sách giao hàng
-                </p>
-              </div>
+                </a>
+              </p>
             </div>
-            <div class="sm:col-span-1"></div>
-            <div class=" gap-4 hover:cursor-pointer h-[84px] flex justify-center">
-              <img
-                src="https://w.ladicdn.com/s500x400/5e476fd054f5fa0a4cfbc867/kisspng-mastercard-money-foothills-florist-business-visa-visa-mastercard-5b4d917e5dd4a12548981115318101743843-20201017081329.png"
-                width="172px"
-                height="68px"
-                alt=""
-              />
+          </div>
+          {/* <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Contact
+            </h6> */}
+          <div className="flex justify-between items-center ">
+            <div>
+              <p className="mb-4 flex items-center justify-center md:justify-start ">
+                <img src={ImageCard}></img>
+              </p>
             </div>
-            <div class="font-sans p-8  md:text-center md:text-lg md:p-4 text-center">
-              <p> Copyright © OTD Co., Ltd</p>
-              <p>MTA Group - All Rights Reserved</p>
-            </div>
-            {/* <p class="font-sans p-8 text-start md:text-center md:text-lg md:p-4">
-              
-            </p> */}
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+
+      <div className="bg-black p-6 text-center dark:bg-black">
+        <span>© 2023 Copyright:</span>
+        <a
+          className="font-semibold text-white dark:text-white"
+          href="https://tw-elements.com/"
+        >
+          APT tech
+        </a>
+      </div>
+    </footer>
   );
 };

@@ -25,6 +25,12 @@ const NavbarMenu = () => {
       Navigate("/");
     }
   }, [param]);
+
+  const handleButtonClick = () => {
+    Navigate(
+      "https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2Ftoninamhito%3Ffbclid%3DIwAR15LbJC0aIIcYQf-a0kusZKeHtXq7VA7k-rCC-kMG-Vil6M4dZSZ0Luxy0&h=AT1n70XcnbjYsxskR3xX3gSVVsLPibS8UnwxrGrRTty-4ENlrPReoPY4nRhIAikhDFbVJviEFCMsn7V__STlye4MztMaLFswmTcADl8Qb2dICfH6-Rtv04fYdjDFRplO1I_-YtEpqtI7z9qxwBFHlw"
+    );
+  };
   return (
     <>
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-[#0176b7] shadow-md">
@@ -95,20 +101,30 @@ const NavbarMenu = () => {
           </motion.div>
 
           <div className="hidden md:flex">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              // variants={createCardVariants(0, 12)}
-              style={{
-                animationName: "bounceInUp",
-                animationDelay: "0.7s",
-                animationDuration: "1.2s",
-              }}
-              className="flex justify-between items-center bg-transparent px-6 gap-2 text-white"
+            <a
+              target="_blank"
+              href="https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2Ftoninamhito%3Ffbclid%3DIwAR15LbJC0aIIcYQf-a0kusZKeHtXq7VA7k-rCC-kMG-Vil6M4dZSZ0Luxy0&h=AT1n70XcnbjYsxskR3xX3gSVVsLPibS8UnwxrGrRTty-4ENlrPReoPY4nRhIAikhDFbVJviEFCMsn7V__STlye4MztMaLFswmTcADl8Qb2dICfH6-Rtv04fYdjDFRplO1I_-YtEpqtI7z9qxwBFHlw"
             >
-              <AiFillPhone className="text-white " />
-              Liên hệ ngay
-            </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                animate={{ scale: 1.2 }}
+                transition={{
+                  duration: 0.3,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                }}
+                style={{
+                  animationName: "bounceInUp",
+                  animationDelay: "0.7s",
+                  animationDuration: "1.2s",
+                }}
+                className="flex justify-between items-center bg-transparent px-6 gap-2 text-white"
+              >
+                <AiFillPhone className="text-white " />
+                Liên hệ ngay
+              </motion.button>
+            </a>
           </div>
 
           <div className="md:hidden" onClick={handleClick}>
@@ -162,14 +178,17 @@ const NavbarMenu = () => {
               );
             })}
             <div className="flex flex-col my-4 gap-4">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                className="border border-[white] text-white flex justify-center items-center bg-transparent px-6 gap-2 py-4"
-              >
-                <AiFillPhone className="text-white " />
-                Liên hệ ngay
-              </motion.button>
+              <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2Ftoninamhito%3Ffbclid%3DIwAR15LbJC0aIIcYQf-a0kusZKeHtXq7VA7k-rCC-kMG-Vil6M4dZSZ0Luxy0&h=AT1n70XcnbjYsxskR3xX3gSVVsLPibS8UnwxrGrRTty-4ENlrPReoPY4nRhIAikhDFbVJviEFCMsn7V__STlye4MztMaLFswmTcADl8Qb2dICfH6-Rtv04fYdjDFRplO1I_-YtEpqtI7z9qxwBFHlw">
+                <motion.button
+                  // onClick={handleButtonClick}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="border border-[white] text-white flex justify-center items-center bg-transparent px-6 gap-2 py-4"
+                >
+                  <AiFillPhone className="text-white " />
+                  Liên hệ ngay
+                </motion.button>
+              </a>
             </div>
           </ul>
         </div>

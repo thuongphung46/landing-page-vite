@@ -4,10 +4,11 @@ import {
   Achievement,
   Feedback,
   Evaluate,
-  Footer,
   SliderInForTeam,
-  Certification,
 } from "../components";
+import { Certification } from "../components/templates/certification";
+import { BrandRepresentative } from "../components/Molecules/BrandRepresentative";
+import { BrandRepresentative2 } from "../components/Molecules/BrandRepresentative2";
 import { AllAges } from "../atoms/all_ages";
 import "../App.css";
 
@@ -18,6 +19,8 @@ export const PageHome = () => {
       <Courses />
       <AllAges />
       <Achievement />
+      <BrandRepresentative2 />
+      <BrandRepresentative />
       <Evaluate />
       <SliderInForTeam />
       <Certification />

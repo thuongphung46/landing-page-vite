@@ -34,4 +34,9 @@ export const list_button = [
     link: "/exercise",
     type: "link_router",
   },
+  {
+    title: "Báo chí",
+    link: "/news",
+    type: "link_router",
+  },
 ];

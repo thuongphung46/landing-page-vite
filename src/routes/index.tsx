@@ -3,6 +3,7 @@ import RootLayout from "../components/templates/root_layout/RootLayout";
 import React from "react";
 import { PageHome } from "../pages/HomePage";
 import { PageExercise } from "../pages/ExercisePage";
+import { PageNews } from "../pages/News";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/exercise",
         element: <PageExercise />,
+      },
+      {
+        path: "/news",
+        element: <PageNews />,
       },
     ],
   },
