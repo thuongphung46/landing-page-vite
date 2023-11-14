@@ -30,11 +30,10 @@ export const Certification = () => {
             {Data.map((items, i) => (
               <div
                 key={i}
-                className="md:max-w-[1100px]"
-                // className=" sm flex flex-col justify-center bg-cover max-w-[400px] rounded column-certification"
+                className="md:max-w-[1100px] column-certification flex justify-center"
               >
                 <motion.img
-                  className=" column-certification"
+                  className=" rounded-2xl shadow-2xl h-full w-full md:w-[80%]"
                   initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5, ease: "linear", delay: 0.2 }}
