@@ -1,6 +1,6 @@
 import UseGetWith from "../../../hook/useGetWith";
 import { motion } from "framer-motion";
-import { SlideBrandRepresentative } from "../../../atoms/BrandRepresentative";
+import { SlideBrandRepresentative } from "../../../components/atoms/BrandRepresentative";
 import { ImgPrbongda2 } from "../../../assets";
 
 export const BrandRepresentative2 = () => {

@@ -1,5 +1,5 @@
 import { ExerciseTemplate } from "../components/templates/ExerciseTemplate";
-import { CardExercise } from "../atoms/CardExercise";
+import { CardExercise } from "../components/atoms/CardExercise";
 
 export const PageExercise = () => {
   return (

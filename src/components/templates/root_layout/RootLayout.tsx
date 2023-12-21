@@ -1,7 +1,7 @@
 import React from "react";
 import NavBarMenu from "../../Navbar";
 import { Navigate, Outlet } from "react-router-dom";
-import { FooterCecond } from "../../../atoms/footer_second";
+import { FooterCecond } from "../../../components/atoms/footer_second";
 import { Footer } from "../../../components";
 
 const RootLayout = () => {

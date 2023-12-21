@@ -1,11 +1,4 @@
-import {
-  ImgMoneyGram,
-  ImgRemitly,
-  ImgPaypal,
-  ImgWebtern,
-  ImgVisa,
-  ImageCard,
-} from "../assets";
+import { ImageCard } from "../../assets";
 
 export const FooterCecond = () => {
   return (

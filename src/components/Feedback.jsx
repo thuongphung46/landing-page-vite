@@ -2,7 +2,10 @@ import React from "react";
 import { Card } from "./Card";
 import Slider from "react-slick";
 import { courses } from "../data/Courses";
-import { FeedbackCard, FeedbackMessCard } from "../atoms/FeedbackCard";
+import {
+  FeedbackCard,
+  FeedbackMessCard,
+} from "../components/atoms/FeedbackCard";
 import { DataEvaluate } from "../data/UrlVDFeedback";
 import { DataMessImg } from "../data/UrlImages";
 import { motion } from "framer-motion";

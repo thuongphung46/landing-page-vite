@@ -1,5 +1,5 @@
 import React from "react";
-import { createCardVariants } from "../constants/function";
+import { createCardVariants } from "../../constants/function";
 import { motion } from "framer-motion";
 
 export const CardInfor = ({ name, image, introduce }) => {

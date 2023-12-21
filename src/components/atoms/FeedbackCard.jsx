@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import GetWidthScreen from "../hook/useGetWith";
+import GetWidthScreen from "../../hook/useGetWith";
 
 export const FeedbackCard = ({ url }) => {
   const { width } = GetWidthScreen();

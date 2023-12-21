@@ -1,5 +1,5 @@
 import React from "react";
-import { CTA } from "../atoms/CTA";
+import { CTA } from "../components/atoms/CTA";
 import { DataEvaluate } from "../data/EvaluateData";
 import { motion } from "framer-motion";
 import GetWidthHeight from "../hook/useGetWith";

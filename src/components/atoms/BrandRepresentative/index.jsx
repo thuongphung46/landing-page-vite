@@ -1,14 +1,14 @@
 import "./index.scss";
 import React from "react";
-import UseGetWith from "../../hook/useGetWith";
+import UseGetWith from "../../../hook/useGetWith";
 import { motion } from "framer-motion";
 import { FcNext, FcPrevious } from "react-icons/fc";
 
-export const Slideshow = ({ data, type, delay }) => {
+export const SlideBrandRepresentative = ({ data, delay }) => {
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
   const { width } = UseGetWith();
-  const SizeWidth = width < 1024;
+  const SizeWidth = width < 1424;
 
   function resetTimeout() {
     if (timeoutRef.current) {
@@ -39,25 +39,17 @@ export const Slideshow = ({ data, type, delay }) => {
   }, [index]);
 
   const getWith = () => {
-    if (width < 600 && type === "video") {
+    if (SizeWidth) {
       return "320px";
-    } else if (width > 600 && type === "video") {
-      return "640px";
-    } else if (width < 600 && type === "image") {
-      return "180px";
-    } else if (width > 600 && type === "image") {
-      return "360px";
+    } else {
+      return "540px";
     }
   };
   const getHeight = () => {
-    if (width < 600 && type === "video") {
-      return "180px";
-    } else if (width > 600 && type === "video") {
-      return "360px";
-    } else if (width < 600 && type === "image") {
-      return "260px";
-    } else if (width > 600 && type === "image") {
-      return "500px";
+    if (SizeWidth) {
+      return "320px";
+    } else {
+      return "580px";
     }
   };
 
@@ -75,28 +67,27 @@ export const Slideshow = ({ data, type, delay }) => {
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
         >
           {data.map((items, index) => (
-            <div className="slide " key={index}>
-              {type === "video" ? (
-                <motion.iframe
-                  key={index}
-                  initial={{ y: -50, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.4, ease: "linear", delay: 0.8 }}
-                  width={SizeWidth ? `320` : "640px"}
-                  height={SizeWidth ? `180` : "360px"}
-                  allow="autoplay"
-                  src={items.url}
-                ></motion.iframe>
-              ) : (
-                <>
-                  <img
-                    className=" object-cover"
-                    height={SizeWidth ? `180px` : "360px"}
-                    width={SizeWidth ? `180px` : "360px"}
-                    src={items.url}
-                  ></img>
-                </>
-              )}
+            <div
+              className="slide "
+              style={{
+                height: getHeight(),
+                width: getWith(),
+              }}
+              key={index}
+            >
+              <motion.img
+                className="object-cover rounded "
+                key={index}
+                initial={{ y: -50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.4, ease: "linear", delay: 0.8 }}
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  objectFit: "contain",
+                }}
+                src={items.url}
+              ></motion.img>
             </div>
           ))}
         </div>

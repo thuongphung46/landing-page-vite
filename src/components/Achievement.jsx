@@ -1,7 +1,7 @@
 import UseGetWith from "../hook/useGetWith";
 import { motion } from "framer-motion";
 import { Data } from "../data/IntroduceURLData";
-import { Slideshow } from "../atoms/slider";
+import { Slideshow } from "../components/atoms/slider";
 
 const Achievement = () => {
   const { width } = UseGetWith();

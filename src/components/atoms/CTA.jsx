@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import GetWidthHeight from "../hook/useGetWith";
+import GetWidthHeight from "../../hook/useGetWith";
 export const CTA = ({ name, image, detail, voice, left }) => {
   const { width } = GetWidthHeight();
   const SizeWidth = width < 600;

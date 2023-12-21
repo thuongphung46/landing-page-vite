@@ -1,4 +1,4 @@
-import { CardNews } from "../../../atoms/CardNews";
+import { CardNews } from "../../../components/atoms/CardNews";
 import { List_news_data } from "../../../data/ListNewsData";
 import "./index.scss";
 export const NewsTemplate = () => {

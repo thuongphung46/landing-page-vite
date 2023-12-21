@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ImgDoTuoi } from "../../assets";
+import { ImgDoTuoi } from "../../../assets";
 export const AllAges = () => {
   return (
     <div id="AllAges" className="w-full bg-[#43afd8] py-24">

@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { createCardVariants } from "../constants/function";
 import useWindowDimensions from "../hook/useGetWith";
-import FooterHeader from "../atoms/footerHeader";
-import { Slideshow } from "../atoms/slider";
+import FooterHeader from "../components/atoms/footerHeader";
+import { Slideshow } from "../components/atoms/slider";
 import { URLHeaderSlide } from "../data/URL_header_slider";
 
 const calculateFontSize = (width, height) => {

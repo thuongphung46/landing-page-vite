@@ -1,7 +1,7 @@
 import "./index.scss";
-import { Data } from "../../data/ExerciseDataImage";
+import { Data } from "../../../data/ExerciseDataImage";
 import { motion } from "framer-motion";
-import UseGetWith from "../../hook/useGetWith";
+import UseGetWith from "../../../hook/useGetWith";
 
 export const CardExercise = () => {
   const { width } = UseGetWith();

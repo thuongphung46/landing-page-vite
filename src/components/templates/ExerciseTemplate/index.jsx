@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useWindowDimensions from "../../../hook/useGetWith";
-import FooterHeader from "../../../atoms/footerHeader";
+import FooterHeader from "../../../components/atoms/footerHeader";
 import { ImgBaiTap4 } from "../../../assets";
 const calculateFontSize = (width, height) => {
   const baseFontSize = 16;

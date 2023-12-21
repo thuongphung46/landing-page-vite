@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { dataCard } from "../constants/InforCardData";
-import { CardInfor } from "../atoms/CardInfor";
+import { CardInfor } from "../components/atoms/CardInfor";
 import { motion } from "framer-motion";
 
 const sliderInForTeam = () => {
